@@ -39,15 +39,7 @@
     text-align: center;
     font-size: 5rem;
     line-height: 4rem;
-  }
-
-  #terminal-small {
-    white-space: pre;
-    color: #8a0002;
-    text-align: center;
-    font-size: 1.2rem;
-    margin-top: 2rem;
-    line-height: 1.6rem;
+    min-height: 8rem;
   }
 
   #enter-screen {
@@ -60,7 +52,6 @@
 
 <body class="min-h-screen flex flex-col items-center px-4">
 
-<!-- ENTRY OVERLAY -->
 <div id="enter-screen"
      class="fixed inset-0 z-50 flex items-center justify-center cursor-pointer">
   <div class="text-red-600 text-3xl tracking-widest animate-pulse select-none">
@@ -68,9 +59,7 @@
   </div>
 </div>
 
-<!-- Terminal -->
-<div id="terminal-big" class="mt-24 mb-2"></div>
-<div id="terminal-small" class="mt-2 mb-8"></div>
+<div id="terminal-big" class="mt-24 mb-24"></div>
 
 <!-- Consortia Header -->
 <header class="mb-6 max-w-3xl text-center z-10">
@@ -83,7 +72,7 @@
 <main class="flex flex-col sm:flex-row gap-10 z-10">
 
   <a href="/under/"
-     class="w-40 h-64 bg-black/60 backdrop-blur-md border border-red-600/80 rounded-xl
+     class="w-40 h-64 bg-black border border-red-600/80 rounded-xl
             flex flex-col items-center justify-center
             hover:scale-105 transition card-glow">
     <img src="/assets/under.png"
@@ -93,7 +82,7 @@
   </a>
 
   <a href="/pulse/"
-     class="w-40 h-64 bg-black/60 backdrop-blur-md border border-red-600/80 rounded-xl
+     class="w-40 h-64 bg-black border border-red-600/80 rounded-xl
             flex flex-col items-center justify-center
             hover:scale-105 transition card-glow">
     <img src="/assets/pulse.png"
@@ -114,27 +103,27 @@
 <!-- Primera Members -->
 <main class="flex flex-col sm:flex-row gap-10 z-10 mb-8">
   <a href="/tsar/"
-     class="w-40 h-64 bg-black/60 backdrop-blur-md border border-red-600/80 rounded-xl
+     class="w-40 h-64 bg-black border border-red-600/80 rounded-xl
             flex flex-col items-center justify-center
             hover:scale-105 transition card-glow">
     <img src="/assets/tsar.png"
          class="w-20 h-20 rounded-full border border-red-600 mb-4 object-cover">
     <div class="text-lg font-bold text-red-500 lowercase">tsar</div>
-    <div class="text-xs text-gray-400 tracking-wide">Cupola</div>
+    <div class="text-xs text-gray-400 tracking-wide">Primera</div>
   </a>
 
   <a href="/rootz/"
-    class="w-40 h-64 bg-black/60 backdrop-blur-md border border-red-600/80 rounded-xl
+    class="w-40 h-64 bg-black border border-red-600/80 rounded-xl
           flex flex-col items-center justify-center
           hover:scale-105 transition card-glow">
     <img src="/assets/rootz.gif"
           class="w-20 h-20 rounded-full border border-red-600 mb-4 object-cover">
     <div class="text-lg font-bold text-red-500 lowercase">rootz</div>
-    <div class="text-xs text-gray-400 tracking-wide">Cupola</div>
+    <div class="text-xs text-gray-400 tracking-wide">Primera</div>
   </a>
 
   <a href="/zarro/"
-     class="w-40 h-64 bg-black/60 backdrop-blur-md border border-red-600/80 rounded-xl
+     class="w-40 h-64 bg-black border border-red-600/80 rounded-xl
             flex flex-col items-center justify-center
             hover:scale-105 transition card-glow">
     <img src="/assets/zarro.png"
@@ -144,13 +133,13 @@
   </a>
 
   <a href="/neumann/"
-     class="w-40 h-64 bg-black/60 backdrop-blur-md border border-red-600/80 rounded-xl
+     class="w-40 h-64 bg-black border border-red-600/80 rounded-xl
             flex flex-col items-center justify-center
             hover:scale-105 transition card-glow">
     <img src="/assets/neumann.jpg"
          class="w-20 h-20 rounded-full border border-red-600 mb-4 object-cover">
     <div class="text-lg font-bold text-red-500 lowercase">neumann</div>
-    <div class="text-xs text-gray-400 tracking-wide">Sancta</div>
+    <div class="text-xs text-gray-400 tracking-wide">Primera</div>
   </a>
 </main>
 
@@ -165,7 +154,7 @@
 <main class="flex flex-col sm:flex-row gap-10 z-10 mb-8">
 
   <a href="/cae/"
-     class="w-40 h-64 bg-black/60 backdrop-blur-md border border-red-600/80 rounded-xl
+     class="w-40 h-64 bg-black border border-red-600/80 rounded-xl
             flex flex-col items-center justify-center
             hover:scale-105 transition card-glow">
     <img src="/assets/catcae.webp"
@@ -175,7 +164,7 @@
   </a>
 
   <a href="/ivan/"
-     class="w-40 h-64 bg-black/60 backdrop-blur-md border border-red-600/80 rounded-xl
+     class="w-40 h-64 bg-black border border-red-600/80 rounded-xl
             flex flex-col items-center justify-center
             hover:scale-105 transition card-glow">
     <img src="/assets/ivan.png"
@@ -184,7 +173,7 @@
     <div class="text-xs text-gray-400 tracking-wide">Sancta</div>
   </a>
 
-  <a class="w-40 h-64 bg-black/60 backdrop-blur-md border border-red-600/80 rounded-xl
+  <a class="w-40 h-64 bg-black border border-red-600/80 rounded-xl
             flex flex-col items-center justify-center
             hover:scale-105 transition card-glow">
     <img src="/assets/world.png"
@@ -194,7 +183,7 @@
   </a>
 
   <a href="/zenya/"
-     class="w-40 h-64 bg-black/60 backdrop-blur-md border border-red-600/80 rounded-xl
+     class="w-40 h-64 bg-black border border-red-600/80 rounded-xl
             flex flex-col items-center justify-center
             hover:scale-105 transition card-glow">
     <img src="/assets/zenya.png"
@@ -203,7 +192,7 @@
     <div class="text-xs text-gray-400 tracking-wide">Sancta</div>
   </a>
 
-  <a class="w-40 h-64 bg-black/60 backdrop-blur-md border border-red-600/80 rounded-xl
+  <a class="w-40 h-64 bg-black border border-red-600/80 rounded-xl
             flex flex-col items-center justify-center
             hover:scale-105 transition card-glow">
     <img src="/assets/esponja.png"
@@ -213,7 +202,7 @@
   </a>
 
   <a href="/xer/"
-     class="w-40 h-64 bg-black/60 backdrop-blur-md border border-red-600/80 rounded-xl
+     class="w-40 h-64 bg-black border border-red-600/80 rounded-xl
             flex flex-col items-center justify-center
             hover:scale-105 transition card-glow">
     <img src="/assets/xer.jpg"
@@ -223,7 +212,7 @@
   </a>
 
   <a href="/9npm/"
-     class="w-40 h-64 bg-black/60 backdrop-blur-md border border-red-600/80 rounded-xl
+     class="w-40 h-64 bg-black border border-red-600/80 rounded-xl
             flex flex-col items-center justify-center
             hover:scale-105 transition card-glow">
     <img src="/assets/9npm.jpg"
@@ -236,7 +225,7 @@
 
 <main class="flex flex-col sm:flex-row gap-10 z-10">
   <a href="/xelas/"
-     class="w-40 h-64 bg-black/60 backdrop-blur-md border border-red-600/80 rounded-xl
+     class="w-40 h-64 bg-black border border-red-600/80 rounded-xl
             flex flex-col items-center justify-center
             hover:scale-105 transition card-glow">
     <img src="/assets/xelas.webp"
@@ -246,7 +235,7 @@
   </a>
 
   <a href="/x01ss/"
-     class="w-40 h-64 bg-black/60 backdrop-blur-md border border-red-600/80 rounded-xl
+     class="w-40 h-64 bg-black border border-red-600/80 rounded-xl
             flex flex-col items-center justify-center
             hover:scale-105 transition card-glow">
     <div class="w-20 h-20 rounded-full mb-4 object-cover"></div>
@@ -254,7 +243,7 @@
     <div class="text-xs text-gray-400 tracking-wide">Sancta</div>
   </a>
 
-  <a class="w-40 h-64 bg-black/60 backdrop-blur-md border border-red-600/80 rounded-xl
+  <a class="w-40 h-64 bg-black border border-red-600/80 rounded-xl
             flex flex-col items-center justify-center
             hover:scale-105 transition card-glow">
     <img src="/assets/sig.png"
@@ -264,7 +253,7 @@
   </a>
 
   <a href="/kr/"
-     class="w-40 h-64 bg-black/60 backdrop-blur-md border border-red-600/80 rounded-xl
+     class="w-40 h-64 bg-black border border-red-600/80 rounded-xl
             flex flex-col items-center justify-center
             hover:scale-105 transition card-glow">
     <img src="/assets/kr.webp"
@@ -274,7 +263,7 @@
   </a>
 
   <a href="/zmk/"
-     class="w-40 h-64 bg-black/60 backdrop-blur-md border border-red-600/80 rounded-xl
+     class="w-40 h-64 bg-black border border-red-600/80 rounded-xl
             flex flex-col items-center justify-center
             hover:scale-105 transition card-glow">
     <img src="/assets/zmk.gif"
@@ -284,7 +273,7 @@
   </a>
 
   <a href="/gabe/"
-     class="w-40 h-64 bg-black/60 backdrop-blur-md border border-red-600/80 rounded-xl
+     class="w-40 h-64 bg-black border border-red-600/80 rounded-xl
             flex flex-col items-center justify-center
             hover:scale-105 transition card-glow">
     <img src="/assets/gabe.png"
@@ -294,7 +283,7 @@
   </a>
 
   <a href="/0/"
-     class="w-40 h-64 bg-black/60 backdrop-blur-md border border-red-600/80 rounded-xl
+     class="w-40 h-64 bg-black border border-red-600/80 rounded-xl
             flex flex-col items-center justify-center
             hover:scale-105 transition card-glow">
     <img src="/assets/zero.gif"
@@ -304,7 +293,7 @@
   </a>
 
   <a href="/lemes/"
-     class="w-40 h-64 bg-black/60 backdrop-blur-md border border-red-600/80 rounded-xl
+     class="w-40 h-64 bg-black border border-red-600/80 rounded-xl
             flex flex-col items-center justify-center
             hover:scale-105 transition card-glow">
     <img src="/assets/lemes.png"
@@ -322,31 +311,30 @@
   </p>
 </header>
 
-<!-- WHBF Information -->
 <main class="flex flex-col sm:flex-row gap-10 z-10">
 
   <a href="https://www.roblox.com/communities/703659855/WHBF#!/about"
-     class="w-40 h-64 bg-black/60 backdrop-blur-md border border-red-600/80 rounded-xl
+     class="w-40 h-64 bg-black border border-red-600/80 rounded-xl
             flex flex-col items-center justify-center
             hover:scale-105 transition card-glow">
     <img src="/assets/whbf.png"
          class="w-20 h-20 rounded-full border border-transparent mb-4 object-cover">
-    <div class="text-lg font-bold text-red-500">WHBF</div>
-    <div class="text-xs text-gray-400 tracking-wide">Main Roblox Group</div>
+    <div class="text-lg font-bold text-red-500">WHBF Roblox</div>
+    <div class="text-xs text-gray-400 tracking-wide">Roblox Group</div>
   </a>
 
   <a href="https://discord.gg/whbf"
-     class="w-40 h-64 bg-black/60 backdrop-blur-md border border-red-600/80 rounded-xl
+     class="w-40 h-64 bg-black border border-red-600/80 rounded-xl
             flex flex-col items-center justify-center
             hover:scale-105 transition card-glow">
     <img src="/assets/whbf.png"
          class="w-20 h-20 rounded-full border border-transparent mb-4 object-cover">
-    <div class="text-lg font-bold text-red-500">WHBF Center</div>
+    <div class="text-lg font-bold text-red-500">WHBF Discord</div>
     <div class="text-xs text-gray-400 tracking-wide">Discord Server</div>
   </a>
 
   <a href="https://t.me/whbfcc"
-     class="w-40 h-64 bg-black/60 backdrop-blur-md border border-red-600/80 rounded-xl
+     class="w-40 h-64 bg-black border border-red-600/80 rounded-xl
             flex flex-col items-center justify-center
             hover:scale-105 transition card-glow">
     <img src="/assets/whbf.png"
@@ -356,93 +344,96 @@
   </a>
 </main>
 
-<!-- Footer -->
 <footer class="mt-32 text-xs text-gray-500 tracking-widest z-10">
-  © 2025 whbf.cc
+  © 2026 whbf.cc
 </footer>
 
-<!-- Força scroll -->
 <div class="h-20"></div>
 
-<!-- Background music -->
 <audio id="bg-music" src="/assets/mywayoflife.mp3" loop></audio>
 
-<!-- Particles -->
 <script>
-  const createParticle = () => {
-    const p = document.createElement('div');
-    p.className = 'snowflake';
-    p.style.left = Math.random() * window.innerWidth + 'px';
-    p.style.fontSize = Math.random() * 14 + 6 + 'px';
-    p.style.animationDuration = Math.random() * 5 + 5 + 's';
-    p.innerText = '❆';
-    document.body.appendChild(p);
-    setTimeout(() => p.remove(), 5250);
-  };
-  setInterval(createParticle, 10);
-</script>
+  function startTypewriter() {
+    const big = document.getElementById('terminal-big');
 
-<script>
-function startTypewriter() {
-  const big = document.getElementById('terminal-big');
-  const small = document.getElementById('terminal-small');
+    big.textContent = "";
 
-  big.textContent = "";
-  small.textContent = "";
+    const lines = [
+      "WILL HUMANITY",
+      "BE FORGOTTEN?"
+    ];
 
-  const lines1 = [
-    "WILL HUMANITY",
-    "BE FORGOTTEN?"
-  ];
-
-  const lines2 = [
-    "",
-  ];
-
-  function typeLines(target, lines, speed, callback) {
     let i = 0, j = 0;
 
     function type() {
-      if (i >= lines.length) {
-        if (callback) callback();
-        return;
-      }
+      if (i >= lines.length) return;
 
       if (j < lines[i].length) {
-        target.textContent += lines[i][j++];
-        setTimeout(type, speed);
+        big.textContent += lines[i][j++];
+        setTimeout(type, 120);
       } else {
-        target.textContent += "\n";
+        big.textContent += "\n";
         i++;
         j = 0;
-        setTimeout(type, 400);
+        setTimeout(type, 250);
       }
     }
 
     type();
   }
 
-  // Type big text first, then small text
-  typeLines(big, lines1, 120, () => {
-    setTimeout(() => {
-      typeLines(small, lines2, 40);
-    }, 800);
-  });
-}
-</script>
+  const flakes = [];
+  let lastTime = performance.now();
 
-<!-- Title animation -->
-<script>
+  function createParticle() {
+    const p = document.createElement('div');
+    p.className = 'snowflake';
+    p.style.left = Math.random() * window.innerWidth + 'px';
+    p.style.fontSize = Math.random() * 14 + 6 + 'px';
+    p.innerText = '❆';
+
+    document.body.appendChild(p);
+
+    flakes.push({
+      el: p,
+      y: -10,
+      speed: Math.random() * 200 + 300
+    });
+  }
+
+  function update(time) {
+    let delta = (time - lastTime) / 1000;
+
+    if (delta > 0.1) delta = 0.1;
+
+    lastTime = time;
+
+    if (Math.random() < delta * 50) {
+      createParticle();
+    }
+
+    flakes.forEach((flake, i) => {
+      flake.y += flake.speed * delta;
+
+      flake.el.style.transform = `translateY(${flake.y}px)`;
+
+      if (flake.y > window.innerHeight + 1310) {
+        flake.el.remove();
+        flakes.splice(i, 1);
+      }
+    });
+
+    requestAnimationFrame(update);
+  }
+  requestAnimationFrame(update);
+
   const titles = ["2","23","238","2382","23826","2382","238","23"];
   let tIndex = 0;
   setInterval(() => {
     document.title = titles[tIndex];
     tIndex = (tIndex + 1) % titles.length;
-  }, 500);
-</script>
+  }, 300);
 
-<!-- Entry -->
-<script>
   const enterScreen = document.getElementById('enter-screen');
   const music = document.getElementById('bg-music');
   music.volume = 0.2;
@@ -455,6 +446,5 @@ function startTypewriter() {
     setTimeout(() => enterScreen.remove(), 400);
   });
 </script>
-
 </body>
 </html>
