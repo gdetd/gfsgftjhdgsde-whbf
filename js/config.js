@@ -20,9 +20,9 @@ const PROFILES = {
         music: '/assets/pulse.mp3',
         titleAnimation: ['p','pu','pul','puls','pulse','puls','pul','pu'],
         buttons: [
-            { icon: 'discord', label: '@1cyb' },
-            { icon: 'litecoin', label: 'LfoLWkSeSf4NmHgdmXsv1mxFYuckyVhf5a' },
-            { icon: 'roblox', label: 'https://www.roblox.com/users/2793063959/profile' }
+            { icon: 'discord', label: '@gov.pt' },
+            { icon: 'litecoin', label: 'LQdrXtBAKmgMMkCw2QUcPawtPpyHk6CA1h' },
+            { icon: 'roblox', label: 'https://www.roblox.com/users/892459/profile' }
         ]
     },
     tsar: {
